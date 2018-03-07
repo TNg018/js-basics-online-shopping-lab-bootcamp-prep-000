@@ -30,13 +30,21 @@ function addToCart(item){
 function viewCart() {
   if (cart.length === 0) {
     console.log("Your shopping cart is empty."
-  } else {
-    var cartItems = Object.keys(cart)
-    var text = `In your cart you have `
-     for (var i = 0; i < cartItems.length; i++) {
-       text += `${cart[cartItems[i]]} at ${cart[i]}!`
-     }
-   }
+} else {
+  if (cart.length > 0) {
+    var list = []
+    for (var i = 0; i < cart.length; i++) {
+      
+    var myItems = Object.keys(cart[i]);
+    list.push( " " + myItems + " at $" + cart[i][myItems]);
+  }
+}
+console.log('In your cart, you have' + list + ".")
+}
+}
+
+
+
 
 function removeFromCart(item) {
   for(var i = 0, l = cart.length; i < l; i++){

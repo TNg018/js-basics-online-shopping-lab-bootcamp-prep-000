@@ -38,7 +38,7 @@ function viewCart() {
             list.push( " " + myItems + " at $" + cart[myItems] );
 
         }
-return console.log('In your cart, you have' ${itemAndPrices.join(',')}.'');
+return console.log('In your cart, you have' + ''${itemAndPrices.join(',')}.');
 
     } else {
         console.log('Your shopping cart is empty.');

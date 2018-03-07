@@ -28,19 +28,19 @@ function addToCart(item){
 }
 
 function viewCart() {
-  if (cart.length === 0) {
-    console.log("Your shopping cart is empty."
-} else {
-  if (cart.length > 0) {
-    var list = []
-    for (var i = 0; i < cart.length; i++) {
+  if ( cart.length > 0 ) {
+        var list = [];
+        for(var i = 0; i < cart.length; i++) {
+            var myItems = Object.keys(cart[i]);
 
-    var myItems = Object.keys(cart[i]);
-    list.push( " " + myItems + " at $" + cart[i][myItems]);
-  }
-}
-console.log('In your cart, you have' + list + ".")
-}
+            list.push( " " + myItems + " at $" + cart[i][myItems] );
+
+        }
+        console.log('In your cart, you have' + list + ".");
+
+    } else {
+        console.log('Your shopping cart is empty.');
+    }
 }
 
 

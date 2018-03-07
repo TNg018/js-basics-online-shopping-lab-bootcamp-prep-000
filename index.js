@@ -36,7 +36,7 @@ function viewCart() {
             list.push( " " + myItems + " at $" + cart[i][myItems] );
 
         }
-        console.log('In your cart, you have' + list + ".");
+return console.log('In your cart, you have' + list + ".");
 
     } else {
         console.log('Your shopping cart is empty.');

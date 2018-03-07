@@ -30,8 +30,9 @@ function addToCart(item){
 function viewCart() {
   if ( cart.length > 0 ) {
     var itemsAndPrices = []
-        for(var i = 0; i < cart.length; i++) {
-            var myItems = Object.keys(cart[i]);
+      for(var i = 0; i < cart.length; i++) {
+        var itemAndPrices = cart[i]
+        var item = Object.keys(itemAndPrices) [0];
 
             list.push( " " + myItems + " at $" + cart[myItems] );
 

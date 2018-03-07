@@ -29,14 +29,14 @@ function addToCart(item){
 
 function viewCart() {
   if ( cart.length > 0 ) {
-        var list = [];
+    var itemsAndPrices = []
         for(var i = 0; i < cart.length; i++) {
             var myItems = Object.keys(cart[i]);
 
-            list.push( " " + myItems + " at $" + cart[i][myItems] );
+            list.push( " " + myItems + " at $" + cart[myItems] );
 
         }
-return console.log(`'In your cart, you have' + list + "."`);
+return console.log('In your cart, you have' + list + ".");
 
     } else {
         console.log('Your shopping cart is empty.');

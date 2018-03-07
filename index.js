@@ -32,12 +32,13 @@ function viewCart() {
     var itemsAndPrices = []
       for(var i = 0; i < cart.length; i++) {
         var itemAndPrices = cart[i]
-        var item = Object.keys(itemAndPrices) [0];
+        var item = Object.keys(itemAndPrices) [0]
+        var price = itemAndPrices.push(`${item} at \$${price}`)
 
             list.push( " " + myItems + " at $" + cart[myItems] );
 
         }
-return console.log('In your cart, you have' + list + ".");
+return console.log('In your cart, you have' ${itemAndPrices.join(',')}.'');
 
     } else {
         console.log('Your shopping cart is empty.');
